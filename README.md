@@ -5,7 +5,8 @@ Static HTML/CSS site — no build step required.
 ## Structure
 
 - `index.html` — About/home page
-- `projects.html` — Project list
+- `projects.html` — Project index (links to project pages)
+- `projects/*.html` — Individual project pages
 - `blog.html` — Blog index (links to posts)
 - `blog/*.html` — Individual blog posts
 - `css/style.css` — All styling
@@ -14,7 +15,10 @@ Static HTML/CSS site — no build step required.
 
 **About page:** edit the text directly in `index.html`, and update the GitHub/LinkedIn links.
 
-**Add a project:** copy a `.project` block in `projects.html`, update the title, link, description, and tags.
+**Add a project:**
+1. Copy `projects/example-project.html` to a new file, e.g. `projects/my-project.html`.
+2. Edit the title, tags, description, and links.
+3. Add an entry at the top of the list in `projects.html`.
 
 **Add a blog post:**
 1. Copy `blog/hello-world.html` to a new file, e.g. `blog/my-post.html`.

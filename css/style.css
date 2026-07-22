@@ -87,34 +87,36 @@ a {
   margin-bottom: 0.4rem;
 }
 
-.project {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.25rem;
+.project-list {
+  list-style: none;
+  padding: 0;
 }
 
-.project h3 {
-  margin: 0 0 0.35rem;
+.project-list li {
+  margin-bottom: 1.1rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--border);
 }
 
-.project h3 a {
-  color: var(--text);
+.project-list .tags {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+
+.project-list a {
   text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
 }
 
-.project h3 a:hover {
+.project-list a:hover {
   color: var(--accent);
 }
 
-.project p {
-  margin: 0;
-  color: var(--muted);
-}
-
-.project .tags {
-  margin-top: 0.6rem;
-  font-size: 0.85rem;
+.project-list p {
+  margin: 0.3rem 0 0;
   color: var(--muted);
 }
 

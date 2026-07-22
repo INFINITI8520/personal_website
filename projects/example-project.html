@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example project — Darius Chan</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="name" href="../index.html">Darius Chan</a>
+      <nav>
+        <a href="../index.html">About</a>
+        <a href="../projects.html" class="active">Projects</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Example project</h1>
+      <p class="post-meta">Python · Flask · SQLite</p>
+
+      <p>
+        Describe what the project does, why you built it, and anything you're proud of
+        or learned along the way.
+      </p>
+
+      <ul class="links">
+        <li><a href="https://github.com/YOUR_GITHUB_USERNAME/example-repo" target="_blank" rel="noopener">Source code</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Live demo (if any)</a></li>
+      </ul>
+
+      <p>
+        To add a new project: copy this file, rename it (e.g. <code>my-next-project.html</code>),
+        edit the title, tags, description and links, then add an entry at the top of the list in
+        <code>projects.html</code>.
+      </p>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Darius Chan
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
