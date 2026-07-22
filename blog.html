@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Darius Chan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="name" href="index.html">Darius Chan</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html" class="active">Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Blog</h1>
+      <p class="subtitle">Notes and writeups.</p>
+
+      <!--
+        Add a new <li> at the top of this list each time you publish a post.
+        Link it to a new HTML file in the /blog folder.
+      -->
+      <ul class="post-list">
+        <li>
+          <span class="date">July 22, 2026</span>
+          <a href="blog/hello-world.html">Hello, world</a>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Darius Chan
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

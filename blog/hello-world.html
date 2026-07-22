@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello, world — Darius Chan</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="name" href="../index.html">Darius Chan</a>
+      <nav>
+        <a href="../index.html">About</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../blog.html" class="active">Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Hello, world</h1>
+      <p class="post-meta">July 22, 2026</p>
+
+      <p>
+        This is your first post. Replace this text with whatever you want to write about —
+        a project writeup, a note, or anything else.
+      </p>
+
+      <p>
+        To add a new post: copy this file, rename it (e.g. <code>my-next-post.html</code>),
+        edit the title and content, and add a link to it at the top of the list in
+        <code>blog.html</code>.
+      </p>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Darius Chan
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Darius Chan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="name" href="index.html">Darius Chan</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Projects</h1>
+      <p class="subtitle">A few things I've built.</p>
+
+      <!--
+        Duplicate this .project block for each project.
+        Replace the title, link, description, and tags.
+      -->
+      <div class="project">
+        <h3><a href="https://github.com/YOUR_GITHUB_USERNAME/example-repo" target="_blank" rel="noopener">Project name</a></h3>
+        <p>One or two sentences describing what this project does and why you built it.</p>
+        <div class="tags">Python · Flask · SQLite</div>
+      </div>
+
+      <div class="project">
+        <h3><a href="#" target="_blank" rel="noopener">Another project</a></h3>
+        <p>Short description of the second project.</p>
+        <div class="tags">JavaScript · React</div>
+      </div>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Darius Chan
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
