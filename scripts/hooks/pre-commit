@@ -1,0 +1,11 @@
+#!/bin/sh
+# Regenerates blog.html and projects.html from the blog/ and projects/ folders
+# before every commit, and stages the result so it's never out of date.
+set -e
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+python3 scripts/generate_index.py
+
+git add blog.html projects.html

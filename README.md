@@ -10,6 +10,16 @@ Static HTML/CSS site — no build step required.
 - `blog.html` — Blog index (links to posts)
 - `blog/*.html` — Individual blog posts
 - `css/style.css` — All styling
+- `scripts/generate_index.py` — Rebuilds the lists in `blog.html`/`projects.html` from the files in `blog/`/`projects/`
+- `scripts/hooks/pre-commit`, `scripts/install-hooks.sh` — Git hook that runs the script above automatically
+
+## One-time setup (per clone)
+
+Git doesn't version hooks, so run this once after cloning the repo:
+
+```
+sh scripts/install-hooks.sh
+```
 
 ## Editing content
 
@@ -17,13 +27,21 @@ Static HTML/CSS site — no build step required.
 
 **Add a project:**
 1. Copy `projects/example-project.html` to a new file, e.g. `projects/my-project.html`.
-2. Edit the title, tags, description, and links.
-3. Add an entry at the top of the list in `projects.html`.
+2. Edit the title, the `date`/`tags`/`summary` meta tags in `<head>`, and the content.
+3. That's it — `projects.html` regenerates automatically on your next commit.
 
 **Add a blog post:**
 1. Copy `blog/hello-world.html` to a new file, e.g. `blog/my-post.html`.
-2. Edit the title, date, and content.
-3. Add a link to it at the top of the list in `blog.html`.
+2. Edit the title, the `date`/`summary` meta tags in `<head>`, and the content.
+3. That's it — `blog.html` regenerates automatically on your next commit.
+
+Entries are sorted newest first by the `date` meta tag. You can also run
+`python3 scripts/generate_index.py` manually any time to preview the update
+without committing.
+
+The list sections in `blog.html`/`projects.html` are wrapped in
+`<!-- AUTO-GENERATED:START/END -->` markers — don't hand-edit content between
+them, it gets overwritten.
 
 ## Preview locally
 
