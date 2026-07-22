@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe Coding a website — Darius Chan</title>
+  <meta name="date" content="2026-07-22" />
+  <meta name="summary" content="What it's like learning to vibecode" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="name" href="../index.html">Darius Chan</a>
+      <nav>
+        <a href="../index.html">About</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../blog.html" class="active">Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Hello, world</h1>
+      <p class="post-meta">July 22, 2026</p>
+
+      <p>
+        I'm testing out running Claude to help me code up projects I wouldn't have the expertise to do on my own. 
+        It's been cool to see how much it can spin up quickly and test for you. It's like outsourcing the work to somebody else for sure. 
+        It does take out the learning from the projectbut I suppose you learn different skills in the process. I'll have to keep playing around with it to see how I want to develop this project.
+        The thing I'm most excited about is being able to have a project I can jump back into easily because the machine will be able to keep the context of the work. 
+      </p>
+
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Darius Chan
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
